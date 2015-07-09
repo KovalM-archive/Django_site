@@ -101,7 +101,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATICFILES_DIRS = (
+    ('static','/home/michail/djangoenv/bin/firstapp/static/'),
+)
 TEMPLATE_DIRS = (
-    '/home/michail/djangoenv/bin/firstapp/templates'
+    '/home/michail/djangoenv/bin/firstapp/templates',
+    '/home/michail/djangoenv/bin/firstapp/article/templates/',
 )
